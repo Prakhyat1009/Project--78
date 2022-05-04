@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<head>
+<title>Page Title</title
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color:deepskyblue;">
+<center>
+    <div id="container" style="padding:30px;">
+<h2 style="color: purple;">My Family Book</h2>
+<img id="images"src="https://images-na.ssl-images-amazon.com/images/I/61zTGIEvQoL.jpg" style="height:500px; width: 500px;">
+<h1 id="name">My Beautiful World</h1>
+<button onclick="nextslide()" style="height:40px; width:70px; background-color: yellow; color:orange; font-weight: bolder; font-size:25px;">Next</button>
+</div>
+</center>
+<script>
+var names=[
+"My Beautiful World",
+"Me",
+"My Sister",
+"My Father",
+"My Mother"
+];
+var slideshow=[
+"https://images-na.ssl-images-amazon.com/images/I/61zTGIEvQoL.jpg",
+"https://wallpaperaccess.com/full/3033241.jpg",
+"https://p.favim.com/orig/2019/02/04/cool-anim-cool-anime-girl-Favim.com-6870903.jpg",
+"https://us.123rf.com/450wm/studiostoks/studiostoks1607/studiostoks160700363/60251372-super-dad-hero-with-a-joyful-smile-pop-art-retro-vector-illustration.jpg?ver=6",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKXdxOGqJGUwGimSDXBjdFrNDwV-AErGsiJQ&usqp=CAU"
+];
+function nextslide(){
+
+if (i == 5) 
+{
+i=0;
+}
+document.getElementById("images").src=slideshow[i];
+document.getElementById("name").innerHTML=names[i];
+i++;
+
+}
+var i= 0;
+</script>
+</body>
+</html>
